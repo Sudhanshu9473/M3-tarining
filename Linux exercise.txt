@@ -1,0 +1,116 @@
+1.Run a command to find your current location
+output-ubuntu@ip-172-31-45-219:~$ pwd
+/home/ubuntu
+2.Change directory from your current location to /var/log.
+output-ubuntu@ip-172-31-45-219:~$ cd /var/log
+3.Go back up a directory.
+output-ubuntu@ip-172-31-45-219:/var/log$ 
+4.Find your current location again.
+output-ubuntu@ip-172-31-45-219:/var$ pwd
+/var
+5.List all the files in the current directory.
+Output- ec2-user@ip-172-31-1-68 ~]$ ls -a
+.  ..  .bash_history  .bash_logout  .bash_profile  .bashrc  .ssh
+
+6.Now list all the files with the long listing.
+Output-ubuntu@ip-172-31-45-219:/var$ ls -lah
+total 60K
+drwxr-xr-x 14 root root   4.0K May 15 03:44 .
+drwxr-xr-x 22 root root   4.0K May 20 05:31 ..
+-rw-r--r--  1 root root    208 Apr 23 15:27 .updated
+drwxr-xr-x  2 root root   4.0K May 17 03:23 backups
+drwxr-xr-x 19 root root   4.0K May 15 03:44 cache
+drwxrwxrwt  2 root root   4.0K May 13 09:55 crash
+drwxr-xr-x 64 root root   4.0K May 16 06:13 lib
+drwxrwsr-x  2 root staff  4.0K Apr 22 13:08 local
+lrwxrwxrwx  1 root root      9 Apr 23 15:27 lock -> /run/lock
+drwxrwxr-x 12 root syslog 4.0K May 20 05:31 log
+drwxrwsr-x  2 root mail   4.0K May 20 06:00 mail
+drwxr-xr-x  2 root root   4.0K Apr 23 15:27 opt
+lrwxrwxrwx  1 root root      4 Apr 23 15:27 run -> /run
+drwxr-xr-x  5 root root   4.0K Apr 23 15:30 snap
+drwxr-xr-x  5 root root   4.0K May 16 06:13 spool
+drwxrwxrwt 13 root root   4.0K May 20 07:48 tmp
+drwxr-xr-x  3 root root   4.0K May 15 03:44 www
+
+7. Now list all the files with the long listing in reverse order, with the newest appearing at the bottom of your screen.
+Output-rw-r--r--  1 root root    208 Apr 23 15:27 .updated
+drwxr-xr-x  2 root root   4.0K May 17 03:23 backups
+drwxr-xr-x 19 root root   4.0K May 15 03:44 cache
+drwxrwxrwt  2 root root   4.0K May 13 09:55 crash
+drwxr-xr-x 64 root root   4.0K May 16 06:13 lib
+drwxrwsr-x  2 root staff  4.0K Apr 22 13:08 local
+lrwxrwxrwx  1 root root      9 Apr 23 15:27 lock -> /run/lock
+drwxrwxr-x 12 root syslog 4.0K May 20 05:31 log
+drwxrwsr-x  2 root mail   4.0K May 20 06:00 mail
+drwxr-xr-x  2 root root   4.0K Apr 23 15:27 opt
+lrwxrwxrwx  1 root root      4 Apr 23 15:27 run -> /run
+drwxr-xr-x  5 root root   4.0K Apr 23 15:30 snap
+drwxr-xr-x  5 root root   4.0K May 16 06:13 spool
+drwxrwxrwt 13 root root   4.0K May 20 07:48 tmp
+drwxr-xr-x  3 root root   4.0K May 15 03:44 www
+ubuntu@ip-172-31-45-219:/var$ ls
+backups  cache  crash  lib  local  lock  log  mail  opt  run  snap  spool  tmp  www
+ubuntu@ip-172-31-45-219:/var$ ls -rl
+total 48
+drwxr-xr-x  3 root root   4096 May 15 03:44 www
+drwxrwxrwt 13 root root   4096 May 20 07:48 tmp
+drwxr-xr-x  5 root root   4096 May 16 06:13 spool
+drwxr-xr-x  5 root root   4096 Apr 23 15:30 snap
+lrwxrwxrwx  1 root root      4 Apr 23 15:27 run -> /run
+drwxr-xr-x  2 root root   4096 Apr 23 15:27 opt
+drwxrwsr-x  2 root mail   4096 May 20 06:00 mail
+drwxrwxr-x 12 root syslog 4096 May 20 05:31 log
+lrwxrwxrwx  1 root root      9 Apr 23 15:27 lock -> /run/lock
+drwxrwsr-x  2 root staff  4096 Apr 22 13:08 local
+drwxr-xr-x 64 root root   4096 May 16 06:13 lib
+drwxrwxrwt  2 root root   4096 May 13 09:55 crash
+drwxr-xr-x 19 root root   4096 May 15 03:44 cache
+drwxr-xr-x  2 root root   4096 May 17 03:23 backups
+8.Change to root directory
+Output-ubuntu@ip-172-31-45-219:~$ cd /
+ubuntu@ip-172-31-45-219:/$ 
+9.Change back to your home directory
+Output-ubuntu@ip-172-31-45-219:/var$ cd ~
+ubuntu@ip-172-31-45-219:~$ 
+
+10.Go up a level in directory structure
+Output-ubuntu@ip-172-31-45-219:/home$ cd ..
+ubuntu@ip-172-31-45-219:/$ 
+11.Find out more information about the ls command
+-ls --help
+man ls
+We can use ls --help or man ls for getting/knowing more about the  ls command.
+12.Go back to /var
+Output-ubuntu@ip-172-31-45-219:/$ cd /var
+ubuntu@ip-172-31-45-219:/var$ 
+13.Show the contents of this directory with details reverse sorted by size (you may have to use man to help
+Output-ubuntu@ip-172-31-45-219:/var$ ls -lShr
+total 48K
+lrwxrwxrwx  1 root root      4 Apr 23 15:27 run -> /run
+lrwxrwxrwx  1 root root      9 Apr 23 15:27 lock -> /run/lock
+drwxr-xr-x  3 root root   4.0K May 15 03:44 www
+drwxrwxrwt 13 root root   4.0K May 20 07:48 tmp
+drwxr-xr-x  5 root root   4.0K May 16 06:13 spool
+drwxr-xr-x  5 root root   4.0K Apr 23 15:30 snap
+drwxr-xr-x  2 root root   4.0K Apr 23 15:27 opt
+drwxrwsr-x  2 root mail   4.0K May 20 06:00 mail
+drwxrwxr-x 12 root syslog 4.0K May 20 05:31 log
+drwxrwsr-x  2 root staff  4.0K Apr 22 13:08 local
+drwxr-xr-x 64 root root   4.0K May 16 06:13 lib
+drwxrwxrwt  2 root root   4.0K May 13 09:55 crash
+drwxr-xr-x 19 root root   4.0K May 15 03:44 cache
+drwxr-xr-x  2 root root   4.0K May 17 03:23 backups
+14.Find out the hardware version you are running
+Output-ubuntu@ip-172-31-45-219:/var$ uname -a
+Linux ip-172-31-45-219 6.8.0-1008-aws #8-Ubuntu SMP Sat Apr 20 00:46:25 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+ubuntu@ip-172-31-45-219:/var$ lspci
+00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+00:01.1 IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]
+00:01.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 01)
+00:02.0 VGA compatible controller: Cirrus Logic GD 5446
+00:03.0 Unassigned class [ff80]: XenSource, Inc. Xen Platform Device (rev 01)
+
+
+
